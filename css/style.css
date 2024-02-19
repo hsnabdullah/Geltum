@@ -1,0 +1,947 @@
+body {
+	margin: 0 !important;
+	padding: 0;
+	font-family: 'Red Hat Display', sans-serif !important;
+	background-color: #000 !important;
+}
+h4{
+	font-size: 40px!important;
+    font-weight: 400!important;
+    color: #fff;
+    letter-spacing: 0px !important;
+    margin-bottom: 15px!important;
+}
+p{
+	font-size: 16px;
+    color: #fff;
+    line-height: 26px;
+}
+h5{
+	font-size: 22px !important;
+	font-weight: 700!important;
+	color: #fff;
+}
+#toggle{
+	display: none !important;
+	position: relative;
+	width:50px;
+	height:50px;
+	border:none;
+	top: 18px;
+	left:50px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.2s;
+}
+#toggle::before{
+	content: '';
+	position: absolute;
+	width:28px;
+	height:2px;
+	background: #fff; 
+	transition: 0.2s;
+	transform:translateY(-10px);
+	box-shadow: 0 10px 0 #fff; 
+}
+#toggle.active::before{
+	transform:translateY(0px);
+	box-shadow: 0 0 0 #fff;
+	rotate:45deg;
+}
+#toggle::after{
+	content: '';
+	position: absolute;
+	width:28px;
+	height:2px;
+	background: #fff; 
+	transition: 0.2s;
+	box-shadow: 0 10 0 #fff;
+	transform:translateY(10px); 
+}
+#toggle.active::after{
+	transform:translateY(0px);
+	rotate:-45deg;
+}
+header nav{
+	padding: 20px 95px !important;
+	color:white;
+}
+header .navbar-expand-lg .navbar-nav .nav-link{
+	font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+header .navbar-expand-lg .navbar-nav .nav-item{
+	margin-right: 10px;
+}
+header .navbar-expand-lg .navbar-nav .active{
+	color: #c3a177;
+}
+header .navbar-expand-lg .navbar-nav .nav-link:hover{
+	color: #c3a177;
+}
+header nav form button{
+	border:1px solid #c3a1778c !important;
+	padding: 8px 11px !important;
+	color:#fff !important;
+	line-height: 40px;
+	font-size: 15px!important;
+	border-radius: 0px !important;
+	font-weight: 400!important;
+}
+header nav form button i{
+	font-size: 15px;
+	margin-left: 10px;
+}
+header nav form button:hover{
+	background-color: #fff !important;
+	color: #000 !important;
+}
+.section-1{
+	max-width: 1200px;
+	margin-top: 14rem;
+}
+.section-1 .banner h1{
+	padding-bottom: 15px;
+    font-size: 68px;
+    font-weight: 400!important;
+    line-height: 88px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: unset!important;
+}
+.section-1 .banner button{
+	margin-top: 40px;
+	border:1px solid #c3a177 !important;
+	padding: 8px 10px !important;
+	color:#fff !important;
+	font-size: 14px!important;
+	border-radius: 0px !important;
+	font-weight: 400!important;
+}
+.section-1 .banner button i{
+	font-size: 13px;
+	margin-left: 7px;
+}
+.section-1 .banner button:hover{
+	background-color: #fff !important;
+	color: #000 !important;
+	font-size: 15px!important;
+	font-weight: 400!important;
+}
+.section-1 .banner-video video{
+	max-width: 600px;
+}
+.section-2{
+	max-width: 1200px;
+	margin-bottom: 8rem;
+	margin-top: 10rem;
+}
+.section-2 .our-mission span{
+	color: #c3a177;
+	font-size: 25px;
+}
+.section-2 .our-mission h4{
+	margin-top: 15px;
+	font-size: 35px!important;
+}
+.section-2 .our-mission-img img{
+	max-width: 350px;
+	margin-left: 58px;
+}
+.section-3{
+	max-width: 1200px;
+	margin-bottom: 4rem;
+}
+.section-3 .geltum-ecosystem h4{
+	margin-bottom: 30px !important;
+	font-weight: 400!important;
+}
+.section-3 .card{
+	background-color: #000;
+	padding: 10px 10px 1px 10px;
+	border-radius: 1px;
+	border: 1px solid #c3a1778c;
+}
+.section-3 .card img{
+	width:40px;
+	margin-bottom: 30px;
+}
+.section-4{
+	margin-bottom: 4rem;
+}
+.section-4 .impact-story{
+	width: 68%;
+	margin:90px auto; 
+}
+.section-4 .impact-story span{
+	color: #c3a177;
+	font-size: 24px;
+}
+.section-4 .impact-story h4{
+	font-weight: 400 !important;
+}
+.section-5{
+	max-width: 1200px;
+	margin-bottom: 8rem;
+}
+.section-5 .card{
+	background-color: #000;
+	border: 1px solid #c3a1778c;
+	border-radius: 1px;
+}
+.section-5 .solve-key-problem h4{
+	font-weight: 400!important;
+	letter-spacing: 0px!important;
+	margin-bottom: 40px!important;
+}
+.section-5 .card i{
+	font-size: 45px;
+	color:#c3a177;
+}
+.section-5 .card h5{
+	font-size: 28px;
+	font-weight: 500;
+}
+.section-5 .card p{
+	font-size: 14px!important;
+}
+.section-6{
+	max-width: 1330px;
+}
+.section-6 .goltum-platform{
+	width:70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+}
+.section-6 .goltum-platform h4{
+	font-weight: 400!important;
+	margin-bottom: 50px;
+}
+.section-6 .card{
+	width: 18%;
+	border: 1px solid #c3a1778c;
+	padding: 1px 10px;
+	border-radius: 0px;
+	background-color: #000;
+}
+.section-6 .card i{
+	font-size: 33px;
+	color:#c3a177;
+}
+.section-6 .card h5{
+	font-size: 28px;
+	font-weight: 400!important;
+}
+.section-6 .card p{
+	font-size: 15px!important;
+}
+.section-7{
+	max-width: 1200px;
+	margin-top:10rem;
+	margin-bottom:10rem; 
+}
+.section-7 .new-easy-way{
+    margin: 63px 120px 12px 0px;
+}
+.section-7 .new-easy-way h4{
+    letter-spacing: 1px !important;
+    font-size: 37px !important;
+    font-weight: 400 !important;
+}
+.section-8{
+	max-width: 1200px;
+	margin: auto;
+}
+.section-8 .platform-feature span{
+	font-size: 22px;
+	color:#c3a177;
+}
+.section-8 .card{
+	border: 1px solid #c3a1778c;
+	padding: 10px 10px 0px 10px;
+	border-radius: 0px;
+	margin: auto 4px;
+	background-color: #000;
+}
+.section-8 .card img{
+	width: 45px;
+}
+.section-9{
+	max-width: 1200px;
+	margin: auto;
+}
+.section-9 .golteum-token{
+	margin:130px auto 30px auto;
+	width:65%;
+}
+.section-9 .card{
+	border: 1px solid #c3a1778c;
+	padding: 10px 10px 0px 10px;
+	border-radius: 0px;
+	background-color: #000;
+}
+.section-9 .card-body img{
+	width: 45px;
+}
+.section-10 .tokenomics{
+	margin-top:145px;
+	margin-bottom:40px; 
+}
+.section-10 .tokenomics h4{
+	margin-bottom: 5px !important;
+}
+.section-10 .tokenomics p{
+	width: 65%;
+	margin:0 auto 40px auto;
+}
+.section-10 .tokenomics img{
+	max-width: 90%; 
+}
+.section-10 .tokenomics button{
+	margin-top: 40px;
+	border:1px solid #c3a1778c !important;
+	padding: 8px 8px !important;
+	color:#fff !important;
+	font-size: 14px!important;
+	border-radius: 0px !important;
+	font-weight: 400!important;
+}
+.section-10 .tokenomics button i{
+	font-size: 15px;
+	margin-left: 10px;
+}
+.section-10 .tokenomics button:hover{
+	background-color: #fff !important;
+	color: #000 !important;
+	font-size: 15px!important;
+	font-weight: 400!important;
+}
+.section-11 .distribution-presale{
+	width: 65%;
+	margin: 60px auto;
+}
+.section-11 .distribution-presale h4{
+	font-weight: 400 !important;
+	font-size: 44px !important;
+}
+.section-11 .distribution-presale span{
+	color:#c3a177;
+}
+.section-11 .distribution-presale-card{
+	width: 71%;
+	margin:auto auto 10rem auto;
+}
+.section-11 .distribution-presale-card .card{
+	border:black;
+	border-radius: 20px;
+}
+.section-11 .distribution-presale-card .card .list-group .list-group-item{
+    background-color: #bf9866;
+    padding-left: 40px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 2px;
+    font-weight: 500;
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+}
+.section-11 .distribution-presale-card .card .list-group .bottom{
+	border-bottom: none;
+	padding-bottom: 10px;
+}
+.section-11 .distribution-presale-card .card .list-group .main{
+	padding-top: 22px;
+}
+.section-11 .distribution-presale-card .card .list-group .side-precantage{
+	padding-left: 345px;
+    position: absolute;
+    top: 50px;
+    color: #fff !important;
+}
+.section-11 .distribution-presale-card .card .list-group .list-group-item span{
+    color: #000;
+    font-size: 19px;
+    font-weight: 600;
+}
+.section-11 .distribution-presale-card .card .list-group .list-group-item .numric{
+    font-weight: 600;
+    font-family: 'Red Hat Display';
+}
+.section-11 .distribution-presale-card .card .list-group .percantage{
+    padding-left: 540px;
+    color: #000;
+    padding-top: 0px;
+    font-size: 19px;
+    font-weight: 600;
+}
+.section-11 .distribution-presale-card .card .bonus-percantage{
+	color: #000 !important;
+    font-size: 19px!important;
+    font-weight: 600!important;
+}
+.section-11 .distribution-presale-card .card .bonus-percantage .numric{
+	color:#fff !important;
+}
+.section-11 .distribution-presale-card .card .bonus-percantage .bonus-percantage-rate{
+	color:#e7c9a3 !important;
+}
+.section-12{
+	margin: auto;
+	max-width: 1200px;
+}
+.section-12 .reshaping-gold span{
+	color: #c3a177;
+}
+.section-12 .card span{
+	color: #c3a177;	
+}
+.section-12 .card{
+	border: 1px solid #c3a1778c;
+	padding: 10px 10px 0px 10px;
+	border-radius: 0px;
+	margin: auto 4px;
+	background-color: #000;
+}
+.section-12 .card-body img{
+	width: 45px;
+	margin-bottom: 30px;
+}
+.section-12 .card-body .active{
+	margin-bottom: 25px !important;
+}
+.section-13{
+	max-width: 1200px;
+	margin-bottom:8rem;
+	margin-top:12rem;
+}
+.section-13 .partnership{
+	margin-top: 50px;
+}
+.section-13 .partnership .card{
+	border-radius: 0px;
+	background-color: #000;
+}
+.section-13 .partnership a{
+	color:#000;
+}
+.section-13 .partnership img{
+	margin: 20px 10px 10px 0px;
+}
+.section-13 .partnership-img img {
+    max-width: 72%;
+    margin-left: 67px;
+}
+.section-14{
+	max-width: 1165px;
+}
+.section-14 .phase-1{
+	margin-top: 230px;
+	margin-bottom: 85px;
+}
+.section-14 .phase-2{
+	margin-top:332px;
+	margin-bottom:75px;
+}
+.section-14 .phase-1 .card .card-header{
+	color: #c3a1778c;
+}
+.section-14 .phase-1 .card .list-group .list-group-item{
+	color:white;
+}
+.section-14 .road-map-card-header span{
+	font-size: 30px;
+    color: #c3a1778c;
+    font-weight: 500;
+}
+.section-14 .road-map-card-header h4{
+    font-weight: 400 !important;
+}
+.section-14 .road-map-card .card{
+	border:none;
+}
+.section-14 .road-map-card .card-header{
+	background-color: #000;
+	font-size: 26px;
+	padding-left: 0;
+	padding-bottom: 0;
+	color: #5e6676;
+	font-weight: 500;
+}
+.section-14 .road-map-card .list-group .list-group-item{
+	background-color: #000;
+	font-size: 15px;
+	padding:0 0 0px;
+	border-radius: initial;
+	color:#5e6676;
+	font-weight: 500;
+}
+.section-14-pro{
+	max-width: 1165px;
+	display: none;
+}
+.section-14-pro .list-group:after{
+	content: "";
+    width: 4px;
+    background: #525252;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    left: -35px;
+}
+.section-14-pro .phase-1 .list-group:before{
+	content: "";
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: -45px;
+    border: 5px solid #424c61;
+    border-radius: 50%;
+    z-index: 1;
+}
+.section-14-pro .phase-1 .list-group:before{
+	border-color: #c1a175;
+    z-index: 999;
+    margin-top:40px;
+    box-shadow: 0 0 15px rgb(254 200 68 / 80%);
+}
+.section-14-pro .phase-2 .list-group:before{
+	content: "";
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    position: absolute;
+    top: 42px;
+    z-index: 999;
+    left: -45px;
+    border: 5px solid #424c61;
+    border-radius: 50%;
+}
+.section-14-pro .phase-3 .list-group:before{
+	content: "";
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    position: absolute;
+    top: 42px;
+    z-index: 999;
+    left: -45px;
+    border: 5px solid #424c61;
+    border-radius: 50%;
+}
+.section-14-pro .phase-4 .list-group:before{
+	content: "";
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    position: absolute;
+    top: 42px;
+    z-index: 999;
+    left: -45px;
+    border: 5px solid #424c61;
+    border-radius: 50%;
+}
+.section-14-pro .road-map-card-header span{
+	font-size: 24px;
+    color: #c3a1778c;
+    font-weight: 500;
+}
+.section-14-pro .road-map-card-header h4{
+    font-weight: 400 !important;
+    font-size: 32px!important;
+    margin-bottom: 0px !important;
+}
+.section-14-pro .road-map-card .card{
+	border:none;
+	margin-left: 52px;
+}
+.section-14-pro .road-map-card .card-header{
+	background-color: #000;
+	font-size: 26px;
+	padding:35px 0 0 0;
+	color: #5e6676;
+	font-weight: 500;
+}
+.section-14-pro .phase-1 .card-header{
+	color:#c3a1778c;
+}
+.section-14-pro .road-map-card .list-group .list-group-item{
+	background-color: #000;
+	font-size: 14px;
+	padding:0 0 0px;
+	border-radius: initial;
+	color:#5e6676;
+	font-weight: 500;
+}
+.section-14-pro .phase-1 .list-group .list-group-item{
+	color:#fff;
+}
+.section-15{
+	max-width: 1200px;
+	margin-top: 10rem;
+}
+.section-15 .accordion h4{
+	font-weight: 400 !important;
+}
+.section-15 .accordion-item{
+	border-bottom:none;
+}
+.section-15 .accordion-button{
+	background-color: #000;
+	color:#c3a177;
+}
+.section-15 .accordion-button::after{
+	background-color:#fff!important;
+	border-radius: 10px;
+}
+.section-15 .accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed{
+	background-color: #000;
+	color: #c3a177;
+	border:none;
+	padding-top: 30px;
+	padding-bottom: 15px;
+	font-size: 14px;
+	border-radius: 0px;
+	box-shadow: none;
+}
+.section-15 .accordion-body{
+	background-color: #000;
+	color: #fff;
+	font-size: 15px;
+}
+.section-16{
+	margin-top: 9rem;
+}
+.section-16 h4{
+	margin-top:40px;
+	font-weight: 300!important;
+	margin-bottom: 0px !important;
+	font-size: 21px !important;
+}
+.section-16 .Jion-social-icon ul{
+	padding: 0;
+	text-align: center;
+	margin-bottom: 80px;
+}
+.section-16 .Jion-social-icon ul li{
+	display: inline-block;
+    margin: 0 10px;
+}
+.section-16 .Jion-social-icon ul li i{
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size:22px;
+    color: #fff;
+    padding: 10px;
+}
+.section-16 .Jion-social-icon ul li i:hover{
+	color:#c3a177;
+	border-color: #c3a177;
+}
+.section-7{
+	max-width: 1200px;
+}
+footer{
+	border-top: 1px solid #c3a1778c;
+}
+footer .foot-link{
+	padding: 15px 0;
+}
+footer .foot-link a{
+	color: #fff;
+	margin-left: 30px;
+	font-size: 15px;
+}
+.foot-paragraph{
+	padding: 15px 0;
+	margin:auto; 
+	font-size: 15px;
+}
+@media (max-width:768px){
+	.nav-link{
+		text-align: center;
+	}
+	form{
+		text-align: center;
+	}
+	#toggle{
+		display:block !important;
+	}
+	.section-1{
+		margin-top: 8rem;
+	}
+	.section-1 .banner h1{
+		font-size: 40px;
+	}
+	.section-1 .banner{
+		text-align: center;
+		margin:0px 36px;
+	}
+	.section-1 .banner-video{
+		text-align: center;
+	}
+	.section-2{
+		margin-bottom: 5rem;
+		margin-top: 5rem;
+	}
+	.section-2 .our-mission-img img{
+		max-width: 250px;
+    	margin-left: 45px;
+    	margin-top: 75px;
+    }
+    .section-2 .our-mission h4{
+    	font-size: 32px;
+    }
+    .section-3 .card{
+    	padding: 0; 
+    }
+    .section-3 .card p{
+    	font-size: 15px;
+    }
+    .section-3 .card .card-text{
+    	text-align: justify;
+    }
+    .section-4 .impact-story{
+    	width:95%;
+    	margin: 10px auto;
+    }
+    .section-5{
+    	margin-bottom: 3rem;
+    }
+	.section-6 .goltum-platform{
+		width: 90%;
+		margin: auto;
+	}
+	.section-7{
+		margin-top:1rem;
+		margin-bottom: 5rem;
+	}
+	.section-7 .new-easy-way {
+    	margin: 60px 0px;
+    	text-align: center;
+	}
+	.section-7 .new-easy-way-img{
+		text-align: center;
+		margin-top: 30px;
+	}
+	.section-8 .card{
+		padding: 0px;
+	}
+	.section-8 .card p{
+		font-size: 14px;
+	}
+	.section-9 .golteum-token{
+		margin:60px auto;
+		width: 80%;
+	}
+	.section-9 .card{
+		padding: 0px;
+	}
+	.section-10 .tokenomics{
+		margin-top: 50px;
+	}
+	.section-10 .tokenomics p {
+    	width: 80%;
+	}
+	.section-11 .distribution-presale h4{
+		font-size: 35px !important;
+	}
+	.section-11 .distribution-presale {
+    	width: 80%;
+    	margin: 60px auto;
+	}
+	.section-11 .distribution-presale-card .card .list-group .percantage{
+		padding-left: 265px;
+	}
+	.section-11 .distribution-presale-card .card .list-group .side-precantage{
+		padding-left: 140px;
+	}
+	.section-11 .distribution-presale-card{
+		margin:auto auto 4rem auto;
+	}
+	.section-12 .card{
+		padding: 0px;
+	}
+	.section-13{
+		margin-top: 1rem;
+		margin-bottom: 5rem;
+	}
+	.section-13 .partnership{
+		text-align: center;
+	}
+	.section-13 .partnership-img img {
+    	max-width: 70%;
+    	margin-left: 100px;
+	}
+	.partnership-img{
+		text-align: center;
+	}
+	.section-13 .partnership-img img {
+    	max-width: 55%;
+    	margin-left: auto;
+    	margin-top: 50px;
+	}
+	.section-14-pro{
+		display: block;
+	}
+	.section-14{
+		display: none;
+	}
+	.section-15{
+		margin-top: 0rem;
+	}
+	.section-16{
+		margin-top: 3rem;
+	}
+	.section-7 {
+   		max-width: 690px;
+	}
+}
+
+
+@media only screen and (max-width: 600px) {
+	h4{
+		font-size: 25px!important;
+	}
+	p{
+		text-align: justify;
+	}
+	.nav-link{
+		text-align: center;
+	}
+	form{
+		text-align: center;
+	}
+	#toggle{
+		left:0px;
+		top:21px;
+		display:block !important;
+	}
+	header nav{
+		padding: 12px 0px !important;
+	}
+	.section-1 .banner-video video{
+    	max-width: 300px;
+	}
+	.section-1 .banner{
+		margin:0;
+		text-align: justify;
+	}
+	.section-1 .banner h1{
+		line-height: 44px;
+		font-size: 36px;
+		text-align: center;
+	}
+	.section-1 .banner button{
+		margin-left:60px;
+		border-radius: 50px !important;
+		padding: 10px 12px 10px 18px !important;
+	}
+	.section-2 .our-mission{
+		text-align: center;
+	}
+	.section-2 .our-mission h4{
+		font-size: 23px !important;
+	}
+	.section-2 .our-mission-img img{
+		max-width: 250px;
+		margin-left: 22px;
+	}
+	.section-6 .goltum-platform{
+		width:100%;
+	}
+	.section-6 .goltum-platform h4{
+		font-size: 25px !important;
+	}
+	.section-7{
+		margin-top:5rem;
+	}
+	.section-7 .new-easy-way {
+    	margin: auto;
+    	text-align: center;
+	}
+	.section-7 .new-easy-way h4 {
+		font-size: 25px !important;
+	}
+	.section-9 .golteum-token{
+    	margin: 50px auto 30px auto;
+    	width: 95%;
+	}
+	.section-9 .golteum-token h4{
+		font-size: 25px !important;
+		line-height: 37px !important;
+	}
+	.section-10 .tokenomics{
+		margin-bottom: 0px;
+	}
+	.section-10 .tokenomics p{
+		width: 90%;
+	}
+	.section-10 .tokenomics img{
+		max-width: 100%;
+	}
+	.section-10 .tokenomics button{
+		font-size: 13px!important;
+		padding: 8px!important;
+	}
+	.section-11 .distribution-presale-card .card .list-group .list-group-item{
+		padding-left: 20px;
+	}
+	.section-11 .distribution-presale {
+    	width: 100%;
+	}
+	.section-11 .distribution-presale h4{
+		font-size: 25px !important;
+	}
+	.section-11 .distribution-presale-card{
+		width:100%;
+	}
+	.section-11 .distribution-presale-card .card .list-group .side-precantage{
+		padding-left: 0px;
+		left: 202px;
+		top: 65px;
+	}
+	.section-11 .distribution-presale-card .card .list-group .percantage{
+		padding-left: 50px;
+	}
+	.section-13 .partnership img{
+		width:60px;
+	}
+	.section-13 .partnership-img img{
+		max-width: 75%;
+	}
+	.section-14-pro:before{
+		top:82px;
+	}
+	.section-14-pro:before{
+		top:3154%;
+	}
+	.section-14-pro .road-map-card-header h4{
+		font-size: 29px !important;
+	}
+	.section-16 .Jion-social-icon ul li{
+		margin: 0 4px;
+	}
+	.section-16 .Jion-social-icon ul li i{
+		font-size: 15px;
+	}
+	.foot-paragraph{
+		padding-bottom: 0;
+		text-align: center;
+	}
+	.foot-link{
+		text-align: center;
+	}
+	footer .foot-link a{
+		margin-left: 13px;
+	}
+}
